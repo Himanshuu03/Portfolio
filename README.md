@@ -5,13 +5,14 @@ A modern, responsive portfolio website built with React and Vite showcasing prof
 ## 🚀 Features
 
 - **Responsive Design**: Mobile-first approach with beautiful UI/UX
-- **Dark Mode Toggle**: Switch between light and dark themes
+- **Dark Mode Toggle**: Switch between light and dark themes with proper contrast
 - **Interactive Navigation**: Smooth section transitions
+- **Professional Experience**: Timeline-style experience section with technology tags
 - **Project Showcase**: Featured projects with technologies and links
 - **Skills Display**: Visual representation of technical skills
 - **Certifications**: Professional certifications with verification
 - **Contact Form**: Easy way for visitors to get in touch
-- **Modern UI**: Clean, professional design with smooth animations
+- **Modern UI**: Clean, professional design with smooth animations and hover effects
 
 ## 🛠️ Technologies Used
 
@@ -27,14 +28,15 @@ A modern, responsive portfolio website built with React and Vite showcasing prof
 src/
 ├── components/          # React components
 │   ├── Header.jsx      # Navigation and theme toggle
-│   ├── About.jsx       # Personal information
+│   ├── About.jsx       # Personal information and experience timeline
 │   ├── Skills.jsx      # Technical skills display
 │   ├── Projects.jsx    # Project showcase
 │   ├── Certifications.jsx # Professional certifications
 │   └── Contact.jsx     # Contact form
 ├── data/               # Static data files
 │   ├── projects.js     # Project information
-│   └── certifications.js # Certification details
+│   ├── certifications.js # Certification details
+│   └── experience.js   # Professional experience data
 ├── assets/             # Static assets
 └── App.jsx             # Main application component
 ```
@@ -77,33 +79,34 @@ src/
 ## 📋 Sections
 
 ### About
-Personal introduction and background information
+Personal introduction and background information with professional experience timeline
 
 ### Skills
 Technical skills organized by categories with visual indicators
 
 ### Projects
-Featured projects including:
-- E-Commerce Platform (React, Node.js, MongoDB)
-- Task Management App (React, Firebase, Material-UI)
-- Weather Dashboard (JavaScript, Chart.js)
-- Portfolio Website (React, CSS3, Vite)
-- Blog Platform (Next.js, PostgreSQL, Prisma)
-- Chat Application (React, Socket.io, Node.js)
+Featured projects
 
 ### Certifications
-Professional certifications from:
-- AWS Certified Solutions Architect
-- React Developer Certification (Meta)
-- Node.js Backend Development (Coursera)
-- Python for Data Science (DataCamp)
-- UI/UX Design Fundamentals (Google)
-- DevOps Engineering (Microsoft)
+Professional certifications
 
 ### Contact
 Contact form for professional inquiries
 
 ## 🎨 Customization
+
+### Adding Experience
+Edit `src/data/experience.js` to add your experience:
+```javascript
+{
+  id: 4,
+  title: "Your Job Title",
+  company: "Company Name",
+  duration: "2024 - Present",
+  description: "Your job description and responsibilities.",
+  technologies: ["React", "Node.js", "MongoDB", "Express"]
+}
+```
 
 ### Adding New Projects
 Edit `src/data/projects.js` to add your projects:
@@ -145,7 +148,7 @@ The portfolio is fully responsive and optimized for:
 
 ## 🌙 Dark Mode
 
-Toggle between light and dark themes using the theme switch in the header. The theme preference is maintained during the session.
+Toggle between light and dark themes using the theme switch in the header. The theme preference is maintained during the session. All sections including the experience timeline are optimized for both light and dark modes with proper contrast and readability.
 
 ## 📄 License
 
@@ -161,4 +164,4 @@ For any questions or suggestions, please reach out through the contact form on t
 
 ---
 
-Built with ❤️ using React and Vite
+Built using React and Vite

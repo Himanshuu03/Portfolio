@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import { experienceData } from '../data/experience'
 
 const About = () => {
   return (
@@ -31,7 +32,33 @@ const About = () => {
               </div>
             </div>
           </div>
+
+        {/* Experience Section */}
+        <div className="experience-section">
+          <h2 className="experience-title">Experience</h2>
+          <div className="experience-grid">
+            {experienceData.map((experience) => (
+              <div key={experience.id} className="experience-card">
+                <div className="experience-header">
+                  <div className="experience-info">
+                    <h3 className="job-title">{experience.title}</h3>
+                    <span className="company-name">{experience.company}</span>
+                  </div>
+                  <div className="experience-duration">
+                    <span className="duration-badge">{experience.duration}</span>
+                  </div>
+                </div>
+                <p className="job-description">{experience.description}</p>
+                <div className="technologies">
+                  {experience.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
     </section>
   )
 }
