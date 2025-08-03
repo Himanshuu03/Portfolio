@@ -1,0 +1,128 @@
+.header {
+  background: #ffffff;
+  color: #000000;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background: #f8f9fa;
+  color: #000000;
+  font-weight: 600;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background: #f8f9fa;
+  transform: scale(1.1);
+}
+
+/* Dark mode styles */
+.dark-mode .header {
+  background: #1a1a1a;
+  color: #ffffff;
+  border-bottom-color: #333333;
+}
+
+.dark-mode .logo h1 {
+  color: #ffffff;
+}
+
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+.dark-mode .nav-link:hover {
+  background: #2a2a2a;
+}
+
+.dark-mode .nav-link.active {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.dark-mode .theme-btn:hover {
+  background: #2a2a2a;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-list {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+} 

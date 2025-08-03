@@ -1,0 +1,405 @@
+.about {
+  padding: 4rem 0;
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wave-emoji {
+  font-size: 3rem;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location-emoji {
+  font-size: 1.1rem;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.github-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.github-link a {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.github-link a:hover {
+  opacity: 0.7;
+}
+
+.about-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-illustration {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-avatar {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  background: white;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 25px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000000;
+}
+
+/* Dark mode styles */
+.dark-mode .about {
+  background: #1a1a1a;
+}
+
+.dark-mode .main-title {
+  color: #ffffff;
+}
+
+.dark-mode .intro-text {
+  color: #cccccc;
+}
+
+.dark-mode .github-link a {
+  color: #ffffff;
+}
+
+.dark-mode .person-avatar {
+  background: #2a2a2a;
+  color: #ffffff;
+  border-color: #444444;
+}
+
+.dark-mode .speech-bubble {
+  background: #2a2a2a;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.dark-mode .speech-bubble::after {
+  border-top-color: #ffffff;
+}
+
+.profile-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.profile-info h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.skills-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.skill-percentage {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 0;
+  }
+  
+  .about-container {
+    padding: 0 1rem;
+  }
+  
+  .about-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .profile-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .image-placeholder {
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+  }
+  
+  .profile-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .skills-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    min-height: auto;
+    max-width: 100%;
+  }
+  
+  .about-text {
+    align-items: center;
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+    justify-content: center;
+  }
+  
+  .wave-emoji {
+    font-size: 2.5rem;
+  }
+  
+  .intro-text {
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+  
+  .github-link {
+    justify-content: center;
+  }
+  
+  .about-illustration {
+    min-height: 300px;
+  }
+  
+  .illustration-container {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  .person-avatar {
+    max-width: 250px;
+    max-height: 250px;
+    font-size: 6rem;
+  }
+  
+  .speech-bubble {
+    top: -25px;
+    right: 20px;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+} 
