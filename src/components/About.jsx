@@ -9,10 +9,11 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <h1 className="main-title">
-              Full-Stack MERN Developer
+              <span>web designer</span> and<br />
+              <span>front-end developer</span>
             </h1>
             <p className="intro-text">
-              Hi, I'm Himanshu. A passionate Full-Stack MERN Developer based in Haryana, India.
+              Hi, I'm Himanshu. A passionate Full-Stack MERN Developer based in Haryana, India. I craft responsive websites where technologies meet creativity.
             </p>
             <div className="github-link">
               <img src="/github-icon.svg" alt="GitHub" className="github-icon" />
