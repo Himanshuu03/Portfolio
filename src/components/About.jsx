@@ -10,15 +10,19 @@ const About = () => {
           <div className="about-text">
             <h1 className="main-title">
               <span>web designer</span> and<br />
-              <span>front-end developer</span>
+              <span>full stack developer</span>
             </h1>
             <p className="intro-text">
-              Hi, I'm Himanshu. A passionate Full-Stack MERN Developer based in Haryana, India. I craft responsive websites where technologies meet creativity.
+              Hi, I'm Himanshu. A passionate Full-Stack MERN Developer based in Bangalore📍, India. I craft responsive websites where technologies meet creativity.
             </p>
             <div className="github-link">
               <img src="/github-icon.svg" alt="GitHub" className="github-icon" />
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/himanshuu03" target="_blank" rel="noopener noreferrer">
                 GitHub
+              </a>
+              <img src="/linkedin-icon.svg" alt="LinkedIn" className="github-icon" style={{ marginLeft: '20px' }} />
+              <a href="https://www.linkedin.com/in/himanshu-%E2%80%8E-95482a235/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
               </a>
             </div>
           </div>

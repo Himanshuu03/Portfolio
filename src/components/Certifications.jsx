@@ -133,14 +133,17 @@ const Certifications = () => {
                 </div>
                 
                 <div className="certification-actions">
-                  <button className="view-cert-btn">
-                    <span>📄</span>
-                    View Certificate
-                  </button>
-                  <button className="download-btn">
-                    <span>⬇️</span>
-                    Download
-                  </button>
+                  {cert.certificateUrl && (
+                    <a 
+                      href={cert.certificateUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="view-cert-btn"
+                    >
+                      <span>📄</span>
+                      View Certificate
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

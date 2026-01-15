@@ -14,7 +14,7 @@ const Header = ({ activeSection, setActiveSection, darkMode, toggleDarkMode }) =
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <h1>Himanshu.dev</h1>
+          <h1>ItsMeHimanshu</h1>
         </div>
         <nav className="nav">
           <ul className="nav-list">

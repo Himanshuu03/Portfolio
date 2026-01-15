@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="24" height="24" fill="none">
+  <rect width="256" height="256" rx="40" fill="#244c5a"/>
+  
+  <!-- gRPC text -->
+  <text x="50%" y="58%"
+        text-anchor="middle"
+        font-size="72"
+        font-weight="700"
+        fill="white"
+        font-family="Arial, Helvetica, sans-serif">
+    gRPC
+  </text>
+
+  <!-- Signal lines -->
+  <path d="M60 170c20-20 40-20 60 0" stroke="white" stroke-width="6" fill="none"/>
+  <path d="M120 170c20-20 40-20 60 0" stroke="white" stroke-width="6" fill="none"/>
+</svg>

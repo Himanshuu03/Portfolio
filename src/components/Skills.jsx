@@ -6,34 +6,35 @@ const Skills = () => {
     {
       category: 'Frontend Development',
       skills: [
-        { name: 'HTML/CSS', icon: '🌐' },
-        { name: 'JavaScript', icon: '⚡' },
-        { name: 'React', icon: '⚛️' },
-        { name: 'TypeScript', icon: '📘' },
-        { name: 'Next.js', icon: '🚀' },
-        { name: 'Tailwind CSS', icon: '🎨' }
+        { name: 'JavaScript', icon: '/javascript-icon.svg' },
+        { name: 'React', icon: '/react-icon.svg' },
+        { name: 'Angular', icon: '/angular-icon.svg' },
+        { name: 'TypeScript', icon: '/typescript-icon.svg' },
+        { name: 'Next.js', icon: '/nextjs-icon.svg' },
+        { name: 'Tailwind CSS', icon: '/tailwind-icon.svg' }
       ]
     },
     {
       category: 'Backend Development',
       skills: [
-        { name: 'Node.js', icon: '🟢' },
-        { name: 'Express.js', icon: '⚡' },
-        { name: 'MongoDB', icon: '🍃' },
-        { name: 'PostgreSQL', icon: '🐘' },
-        { name: 'Python', icon: '🐍' },
-        { name: 'Django', icon: '🎯' }
+        { name: 'Node.js', icon: '/nodejs-icon.svg' },
+        { name: 'Express.js', icon: '/express-icon.svg' },
+        { name: 'Spring Boot', icon: '/spring-icon.svg' },
+        { name: 'gRPC', icon: '/grpc-icon.svg' },
+        { name: 'MongoDB', icon: '/mongodb-icon.svg' },
+        { name: 'PostgreSQL', icon: '/postgresql-icon.svg' },
+        { name: 'Python', icon: '/python-icon.svg' }
       ]
     },
     {
       category: 'Tools & Technologies',
       skills: [
         { name: 'Git/GitHub', icon: '/github-icon.svg' },
-        { name: 'Docker', icon: '🐳' },
-        { name: 'AWS', icon: '☁️' },
-        { name: 'Firebase', icon: '🔥' },
-        { name: 'Vercel', icon: '▲' },
-        { name: 'Figma', icon: '🎨' }
+        { name: 'Docker', icon: '/docker-icon.svg' },
+        { name: 'Kubernetes', icon: '/kubernetes-icon.svg' },
+        { name: 'Argo CD', icon: '/argocd-icon.svg' },
+        { name: 'AWS', icon: '/aws-icon.svg' },
+        { name: 'Vercel', icon: '/vercel-icon.svg' }
       ]
     }
   ]

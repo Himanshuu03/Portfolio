@@ -18,36 +18,31 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I will get back to you soon.')
+    
+    // Create mailto link with form data
+    const mailtoLink = `mailto:himanshu32428@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`
+    
+    // Open default email client
+    window.location.href = mailtoLink
+    
+    // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' })
   }
 
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/himanshuu03',
       icon: '/github-icon.svg',
       color: '#333'
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/yourusername',
-      icon: '💼',
+      url: 'https://www.linkedin.com/in/himanshuu03/',
+      icon: '/linkedin-icon.svg',
       color: '#0077b5'
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/yourusername',
-      icon: '🐦',
-      color: '#1da1f2'
-    },
-    {
-      name: 'Email',
-      url: 'mailto:your.email@example.com',
-      icon: '📧',
-      color: '#ea4335'
     }
   ]
 
@@ -73,7 +68,7 @@ const Contact = () => {
                   <span className="contact-icon">📍</span>
                   <div>
                     <h4>Location</h4>
-                    <p>San Francisco, CA</p>
+                    <p>Bangalore, India</p>
                   </div>
                 </div>
                 
@@ -81,7 +76,7 @@ const Contact = () => {
                   <span className="contact-icon">📧</span>
                   <div>
                     <h4>Email</h4>
-                    <p>your.email@example.com</p>
+                    <p>himanshu32428@gmail.com</p>
                   </div>
                 </div>
                 
@@ -89,7 +84,7 @@ const Contact = () => {
                   <span className="contact-icon">📱</span>
                   <div>
                     <h4>Phone</h4>
-                    <p>+1 (555) 123-4567</p>
+                    <p>+91 93067-48005</p>
                   </div>
                 </div>
               </div>
