@@ -37,6 +37,11 @@ const About = () => {
               </div>
             </div>
           </div>
+          
+          <div className="scroll-indicator">
+            <span className="scroll-text">Scroll to see my experience</span>
+            <div className="scroll-arrow">↓</div>
+          </div>
 
         {/* Experience Section */}
         <div className="experience-section">
