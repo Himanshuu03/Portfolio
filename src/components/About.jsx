@@ -13,7 +13,7 @@ const About = () => {
               <span>full stack developer</span>
             </h1>
             <p className="intro-text">
-              Hi, I'm Himanshu. A passionate Full-Stack MERN Developer based in Bangalore📍, India. I craft responsive websites where technologies meet creativity.
+              I’m Himanshu, a passionate developer based in Bangalore📍, India. I build scalable web solutions where development, DevOps, and creativity come together.
             </p>
             <div className="github-link">
               <img src="/github-icon.svg" alt="GitHub" className="github-icon" />
